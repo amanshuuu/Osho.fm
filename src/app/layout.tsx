@@ -42,7 +42,7 @@ export default function RootLayout({
           <title>Osho.fm — Listen to Osho Discourses</title>
           <meta name="description" content="Discover thousands of Osho audio discourses. Meditate, learn, and grow with the wisdom of Osho." />
           <meta name="theme-color" content="#7A1A2E" />
-          <meta name="google-site-verification" content="lEtl_04_z1JL5-FRWzmLHfLAo4s0ywLc6qCjYpEj7CY" />
+          <meta name="google-site-verification" content="mSgcPg34YjW2p6sPMhgF7-yX_mSMiEemaRawminyFiE" />
           <link rel="manifest" href="/manifest.json" />
           <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
           <link rel="apple-touch-icon" href="/favicon.svg" />
@@ -64,7 +64,7 @@ export default function RootLayout({
         <title>Osho.fm — Listen to Osho Discourses</title>
         <meta name="description" content="Discover thousands of Osho audio discourses. Meditate, learn, and grow with the wisdom of Osho." />
         <meta name="theme-color" content="#7A1A2E" />
-        <meta name="google-site-verification" content="lEtl_04_z1JL5-FRWzmLHfLAo4s0ywLc6qCjYpEj7CY" />
+        <meta name="google-site-verification" content="mSgcPg34YjW2p6sPMhgF7-yX_mSMiEemaRawminyFiE" />
         <link rel="manifest" href="/manifest.json" />
         <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
         <link rel="apple-touch-icon" href="/favicon.svg" />
