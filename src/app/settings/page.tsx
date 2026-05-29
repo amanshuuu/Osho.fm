@@ -7,6 +7,7 @@ import { useRouter } from 'next/navigation'
 
 import { usePlayer } from '@/lib/player-context'
 import { useTranslation } from '@/lib/language-provider'
+import { SEOHead } from '@/components/ui/seo-head'
 
 export default function SettingsPage() {
   const router = useRouter()
@@ -54,6 +55,11 @@ export default function SettingsPage() {
 
   return (
     <div className="pb-[136px]">
+      <SEOHead
+        title="Settings — Osho.fm"
+        description="Customize your listening experience: playback speed, sleep timer, language, and notifications."
+        url="/settings"
+      />
       <section className="py-10 sm:py-12 hero-gradient">
         <div className="max-w-screen-2xl mx-auto px-5 sm:px-6">
           <motion.div

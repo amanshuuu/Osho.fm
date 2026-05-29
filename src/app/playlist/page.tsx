@@ -5,6 +5,7 @@ import { motion } from 'framer-motion'
 import { Play, Clock, Headphones, Heart, Sparkles, MoreHorizontal, Shuffle } from 'lucide-react'
 import { Artwork } from '@/components/ui/artwork'
 import { playlists, discourses } from '@/lib/data'
+import { SEOHead } from '@/components/ui/seo-head'
 
 export default function PlaylistPage() {
   const playlist = playlists[0]
@@ -12,6 +13,12 @@ export default function PlaylistPage() {
 
   return (
     <div className="pb-12">
+      <SEOHead
+        title={playlist.title}
+        description={playlist.description}
+        image={playlist.thumbnail || undefined}
+        url="/playlist"
+      />
       <section className="py-12 hero-gradient">
         <div className="max-w-screen-2xl mx-auto px-6">
           <motion.div

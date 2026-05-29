@@ -31,6 +31,13 @@ export default function CategoriesPage() {
         title="Osho Discourse Categories"
         description="Browse Osho discourses by topic — meditation, awareness, love, mind, silence, and more. Find the wisdom you need."
         url="/categories"
+        jsonLd={{
+          "@context": "https://schema.org",
+          "@type": "CollectionPage",
+          "name": "Osho Discourse Categories",
+          "description": "Browse Osho discourses by topic — meditation, awareness, love, mind, silence, and more.",
+          "isPartOf": { "@type": "WebSite", "name": "Osho.fm", "url": "https://osho.fm" }
+        }}
       />
       <section className="py-12 sm:py-20 hero-gradient relative overflow-hidden">
         <div className="absolute inset-0 bg-gradient-to-b from-transparent via-white/20 to-white pointer-events-none" />

@@ -51,6 +51,13 @@ export default function DiscoverPage() {
         title="Discover Osho Discourses"
         description="Browse 5,000+ Osho audio discourses by category, mood, and language. Find talks on meditation, awareness, love, mind, and more."
         url="/discover"
+        jsonLd={{
+          "@context": "https://schema.org",
+          "@type": "CollectionPage",
+          "name": "Discover Osho Discourses",
+          "description": "Browse 5,000+ Osho audio discourses by category, mood, and language.",
+          "isPartOf": { "@type": "WebSite", "name": "Osho.fm", "url": "https://osho.fm" }
+        }}
       />
       <section className="py-12 sm:py-20 hero-gradient relative overflow-hidden">
         <Image src="/images/osho-portrait.jpg" alt="" fill className="object-cover opacity-[0.04]" sizes="100vw" />

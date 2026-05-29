@@ -12,6 +12,13 @@ export default function AboutPage() {
         title="About Osho.fm"
         description="Osho.fm is a volunteer-run listening platform offering thousands of free Osho audio discourses for meditation and self-discovery."
         url="/about"
+        jsonLd={{
+          "@context": "https://schema.org",
+          "@type": "AboutPage",
+          "name": "About Osho.fm",
+          "description": "Osho.fm is a volunteer-run listening platform offering thousands of free Osho audio discourses.",
+          "isPartOf": { "@type": "WebSite", "name": "Osho.fm", "url": "https://osho.fm" }
+        }}
       />
       <section className="py-12 sm:py-20 hero-gradient">
         <div className="max-w-screen-2xl mx-auto px-5 sm:px-6">

@@ -6,6 +6,7 @@ import { motion, AnimatePresence } from 'framer-motion'
 import { ArrowRight, ArrowLeft, Sparkles, Check } from 'lucide-react'
 import { beginnerPaths } from '@/lib/data'
 import { Brain, Moon, BedDouble, Heart, Wind, Target } from 'lucide-react'
+import { SEOHead } from '@/components/ui/seo-head'
 
 const iconMap: Record<string, React.ElementType> = {
   moon: Moon, 'bed-double': BedDouble, heart: Heart,
@@ -40,6 +41,11 @@ export default function OnboardingPage() {
 
   return (
     <div className="min-h-[100dvh] flex items-center justify-center px-5 sm:px-6 py-12 pb-[180px]">
+      <SEOHead
+        title="Onboarding — Find Your Path"
+        description="Tell us your mood and goals to discover the perfect Osho discourses for you."
+        url="/onboarding"
+      />
       <div className="w-full max-w-lg">
         <div className="flex items-center justify-center gap-1.5 mb-10">
           {steps.map((s, i) => (

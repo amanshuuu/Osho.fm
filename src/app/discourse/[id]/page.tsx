@@ -46,22 +46,33 @@ export default function DiscoursePage() {
         image={discourse.thumbnail || undefined}
         url={`/discourse/${discourse.id}`}
         type="article"
-        jsonLd={{
-          "@context": "https://schema.org",
-          "@type": "AudioObject",
-          "name": discourse.title,
-          "description": discourse.description,
-          "genre": discourse.category,
-          "inLanguage": discourse.language === 'hindi' ? 'hi' : 'en',
-          "duration": discourse.duration,
-          "contentUrl": discourse.audioUrl || undefined,
-          "thumbnailUrl": discourse.thumbnail || undefined,
-          "publisher": {
-            "@type": "Organization",
-            "name": "Osho.fm",
-            "url": "https://osho.fm"
+        jsonLd={[
+          {
+            "@context": "https://schema.org",
+            "@type": "BreadcrumbList",
+            "itemListElement": [
+              { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://osho.fm/" },
+              { "@type": "ListItem", "position": 2, "name": "Discourses", "item": "https://osho.fm/discover" },
+              { "@type": "ListItem", "position": 3, "name": discourse.title }
+            ]
+          },
+          {
+            "@context": "https://schema.org",
+            "@type": "AudioObject",
+            "name": discourse.title,
+            "description": discourse.description,
+            "genre": discourse.category,
+            "inLanguage": discourse.language === 'hindi' ? 'hi' : 'en',
+            "duration": discourse.duration,
+            "contentUrl": discourse.audioUrl || undefined,
+            "thumbnailUrl": discourse.thumbnail || undefined,
+            "publisher": {
+              "@type": "Organization",
+              "name": "Osho.fm",
+              "url": "https://osho.fm"
+            }
           }
-        }}
+        ]}
       />
       <section className="py-6 sm:py-8 hero-gradient">
         <div className="max-w-screen-2xl mx-auto px-5 sm:px-6">
