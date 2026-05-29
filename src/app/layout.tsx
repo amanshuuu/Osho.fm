@@ -44,7 +44,6 @@ export default function RootLayout({
           <meta name="theme-color" content="#7A1A2E" />
           <link rel="manifest" href="/manifest.json" />
           <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
-          <link rel="icon" href="/favicon.ico" sizes="any" />
           <link rel="apple-touch-icon" href="/favicon.svg" />
           <meta property="og:type" content="website" />
           <meta property="og:site_name" content="Osho.fm" />
@@ -66,7 +65,6 @@ export default function RootLayout({
         <meta name="theme-color" content="#7A1A2E" />
         <link rel="manifest" href="/manifest.json" />
         <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
-        <link rel="icon" href="/favicon.ico" sizes="any" />
         <link rel="apple-touch-icon" href="/favicon.svg" />
         <meta property="og:type" content="website" />
         <meta property="og:site_name" content="Osho.fm" />
