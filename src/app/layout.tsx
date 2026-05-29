@@ -8,7 +8,6 @@ import { Header } from '@/components/layout/header'
 import { Sidebar } from '@/components/layout/sidebar'
 import { MobileNav } from '@/components/layout/mobile-nav'
 import { AudioPlayer } from '@/components/layout/audio-player'
-import { NewContentToast } from '@/components/ui/new-content-toast'
 import { PlayerProvider } from '@/lib/player-context'
 import { DiscourseProvider } from '@/lib/discourse-context'
 import { LanguageProvider } from '@/lib/language-provider'
@@ -97,7 +96,6 @@ export default function RootLayout({
             </div>
             <MobileNav />
             <AudioPlayer />
-            <NewContentToast />
           </PlayerProvider>
           </SupportProvider>
           </SavedProvider>

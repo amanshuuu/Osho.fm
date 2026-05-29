@@ -4,8 +4,9 @@ import { useState } from 'react'
 import Link from 'next/link'
 import { usePathname, useRouter } from 'next/navigation'
 import { motion } from 'framer-motion'
-import { Search, Bell, User } from 'lucide-react'
+import { Search, User } from 'lucide-react'
 import { SearchModal } from '@/components/ui/search-modal'
+import { NotificationBell } from '@/components/ui/notification-bell'
 import { cn } from '@/lib/utils'
 import { useTranslation } from '@/lib/language-provider'
 
@@ -22,7 +23,6 @@ const navLinks = (t: (k: string) => string) => [
 
 export function Header({ className }: HeaderProps) {
   const [searchOpen, setSearchOpen] = useState(false)
-  const [notifOpen, setNotifOpen] = useState(false)
   const pathname = usePathname()
   const router = useRouter()
   const { t } = useTranslation()
@@ -69,25 +69,7 @@ export function Header({ className }: HeaderProps) {
             >
               <Search className="w-5 h-5 text-[#7A6B5D]" />
             </button>
-            <div className="relative">
-              <button
-                onClick={() => setNotifOpen(!notifOpen)}
-                className="w-11 h-11 rounded-full bg-[#F8F5F0]/80 flex items-center justify-center hover:bg-[#E5DED4]/80 transition-colors relative active:scale-90"
-                aria-label="Notifications"
-              >
-                <Bell className="w-5 h-5 text-[#7A6B5D]" />
-                <span className="absolute top-3 right-3 w-2 h-2 rounded-full bg-[#7A1A2E] ring-2 ring-[#FDFCF9]" />
-              </button>
-              {notifOpen && (
-                <>
-                  <div className="fixed inset-0 z-40" onClick={() => setNotifOpen(false)} />
-                  <div className="absolute right-0 top-[calc(100%+8px)] z-50 w-72 bg-white rounded-xl shadow-xl border border-[#E5DED4]/40 p-4">
-                    <p className="text-sm font-medium text-[#1A1A1A] mb-3">{t('notifications')}</p>
-                    <p className="text-xs text-[#7A6B5D]">{t('notificationsEmpty')}</p>
-                  </div>
-                </>
-              )}
-            </div>
+            <NotificationBell />
             <button
               onClick={() => router.push('/profile')}
               className="hidden md:flex w-11 h-11 rounded-full bg-[#F8F5F0]/80 flex items-center justify-center hover:bg-[#E5DED4]/80 transition-colors active:scale-90"

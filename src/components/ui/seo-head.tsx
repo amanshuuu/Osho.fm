@@ -1,8 +1,7 @@
 'use client'
 
-import { useEffect, type ReactNode } from 'react'
+import { useEffect, useMemo, type ReactNode } from 'react'
 
-const SITE_URL = 'https://osho.fm'
 const SITE_NAME = 'Osho.fm'
 const DEFAULT_IMAGE = '/images/osho-portrait.jpg'
 
@@ -50,10 +49,12 @@ export function SEOHead({
 }: SEOProps) {
   const fullTitle = title ? `${title} | ${SITE_NAME}` : SITE_NAME
   const desc = description || 'Discover thousands of Osho audio discourses. Meditate, learn, and grow with the wisdom of Osho.'
-  const imageUrl = image?.startsWith('http') ? image : `${SITE_URL}${image || DEFAULT_IMAGE}`
-  const pageUrl = url ? `${SITE_URL}${url}` : SITE_URL
 
   useEffect(() => {
+    const origin = window.location.origin
+    const imageUrl = image?.startsWith('http') ? image : `${origin}${image || DEFAULT_IMAGE}`
+    const pageUrl = url ? `${origin}${url}` : origin
+
     document.title = fullTitle
 
     setMeta('description', desc)
@@ -90,7 +91,7 @@ export function SEOHead({
         script.textContent = JSON.stringify(data)
       })
     }
-  }, [fullTitle, desc, imageUrl, pageUrl, type, noindex, jsonLd])
+  }, [fullTitle, desc, image, url, type, noindex, jsonLd])
 
   return null
 }

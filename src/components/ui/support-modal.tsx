@@ -4,10 +4,11 @@ import { useState } from 'react'
 import { motion, AnimatePresence } from 'framer-motion'
 import { Heart, X, Copy, Check, QrCode, CreditCard } from 'lucide-react'
 
+// ⚠️ CONFIG: Replace with your own UPI ID and PayPal link
 const SUPPORT_CONFIG = {
-  upiId: 'your-upi-id@oksbi',
+  upiId: 'your-upi-id@upi',    // ← CHANGE THIS to your real UPI ID
   upiName: 'Osho.fm',
-  paypalUrl: '',
+  paypalUrl: '',                // ← Add PayPal.me link if available
 }
 
 function getUpiUrl(amount?: number) {
