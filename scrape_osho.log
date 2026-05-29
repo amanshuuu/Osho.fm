@@ -1,0 +1,56 @@
+2026-05-29 19:05:13,532 - INFO - Starting Osho discourse scraper
+2026-05-29 19:05:13,534 - WARNING - No start URLs configured. Please edit the script to add target URLs.
+2026-05-29 19:05:13,534 - WARNING - No discourses were scraped.
+2026-05-29 19:06:09,255 - INFO - Starting Osho discourse scraper
+2026-05-29 19:06:09,256 - INFO - Processing start URL: https://www.oshoreads.com/
+2026-05-29 19:06:09,256 - INFO - Fetching: https://www.oshoreads.com/
+2026-05-29 19:06:10,604 - ERROR - Failed to fetch https://www.oshoreads.com/: HTTPSConnectionPool(host='www.oshoreads.com', port=443): Max retries exceeded with url: / (Caused by NameResolutionError("HTTPSConnection(host='www.oshoreads.com', port=443): Failed to resolve 'www.oshoreads.com' ([Errno 11001] getaddrinfo failed)"))
+2026-05-29 19:06:10,605 - INFO - Found 0 discourse URLs
+2026-05-29 19:06:10,605 - INFO - Processing start URL: https://oshodiscourses.org/
+2026-05-29 19:06:10,605 - INFO - Fetching: https://oshodiscourses.org/
+2026-05-29 19:06:11,666 - ERROR - Failed to fetch https://oshodiscourses.org/: HTTPSConnectionPool(host='oshodiscourses.org', port=443): Max retries exceeded with url: / (Caused by NameResolutionError("HTTPSConnection(host='oshodiscourses.org', port=443): Failed to resolve 'oshodiscourses.org' ([Errno 11001] getaddrinfo failed)"))
+2026-05-29 19:06:11,667 - INFO - Found 0 discourse URLs
+2026-05-29 19:06:11,667 - INFO - Processing start URL: https://www.oshoworld.com/
+2026-05-29 19:06:11,667 - INFO - Fetching: https://www.oshoworld.com/
+2026-05-29 19:06:13,814 - INFO - Found 0 discourse URLs
+2026-05-29 19:06:13,814 - WARNING - No discourses were scraped.
+2026-05-29 19:12:49,073 - INFO - Starting Osho discourse scraper
+2026-05-29 19:12:49,074 - INFO - No start URLs provided or scraping failed, generating sample data from existing discourses
+2026-05-29 19:12:49,075 - WARNING - Could not import discourse data: No module named 'data'
+2026-05-29 19:12:49,077 - INFO - Saved 1 discourses to discourses.json
+2026-05-29 19:12:49,081 - INFO - Saved TypeScript data to src/lib/scraped-data.ts
+2026-05-29 19:12:49,082 - INFO - Scraping completed. Found 1 discourses.
+2026-05-29 19:13:59,409 - INFO - Starting Osho discourse scraper
+2026-05-29 19:13:59,409 - INFO - No start URLs provided or scraping failed, generating sample data from existing discourses
+2026-05-29 19:13:59,411 - WARNING - Could not import discourse data: No module named 'data'
+2026-05-29 19:13:59,412 - INFO - Saved 1 discourses to discourses.json
+2026-05-29 19:13:59,414 - INFO - Saved TypeScript data to src/lib/scraped-data.ts
+2026-05-29 19:13:59,414 - INFO - Scraping completed. Found 1 discourses.
+2026-05-29 19:16:08,944 - INFO - Starting Osho discourse scraper
+2026-05-29 19:16:08,945 - WARNING - No discourses were scraped.
+2026-05-29 19:19:16,794 - INFO - Starting Osho discourse scraper
+2026-05-29 19:19:16,795 - INFO - No discourses scraped from URLs, generating sample data from existing discourses
+2026-05-29 19:19:16,797 - WARNING - Could not import discourse data: No module named 'data'
+2026-05-29 19:19:16,800 - WARNING - Could not import discourse data via alternative method: No module named 'lib.data'
+2026-05-29 19:19:16,801 - INFO - Saved 1 discourses to discourses.json
+2026-05-29 19:19:16,803 - INFO - Saved TypeScript data to src/lib/scraped-data.ts
+2026-05-29 19:19:16,804 - INFO - Scraping completed. Found 1 discourses.
+2026-05-29 19:21:32,906 - INFO - Starting Osho discourse scraper
+2026-05-29 19:21:32,906 - INFO - No discourses scraped from URLs, generating sample data from existing discourses
+2026-05-29 19:21:32,909 - WARNING - Could not import discourse data: No module named 'src.lib.data'
+2026-05-29 19:21:32,910 - WARNING - Could not import discourse data via alternative method: No module named 'data'
+2026-05-29 19:21:32,912 - INFO - Saved 1 discourses to discourses.json
+2026-05-29 19:21:32,914 - INFO - Saved TypeScript data to src/lib/scraped-data.ts
+2026-05-29 19:21:32,914 - INFO - Scraping completed. Found 1 discourses.
+2026-05-29 19:26:21,610 - INFO - Starting Osho discourse scraper
+2026-05-29 19:26:21,612 - INFO - No discourses scraped from URLs, generating sample data from existing discourses
+2026-05-29 19:26:21,616 - WARNING - Could not import discourse data from data.ts: Could not find discourses array in data.ts
+2026-05-29 19:26:21,617 - INFO - Saved 1 discourses to discourses.json
+2026-05-29 19:26:21,619 - INFO - Saved TypeScript data to src/lib/scraped-data.ts
+2026-05-29 19:26:21,619 - INFO - Scraping completed. Found 1 discourses.
+2026-05-29 19:31:05,837 - INFO - Starting Osho discourse scraper
+2026-05-29 19:31:05,838 - INFO - No discourses scraped from URLs, generating sample data from existing discourses
+2026-05-29 19:31:05,841 - INFO - Generated 3 discourses from existing data (sample)
+2026-05-29 19:31:05,844 - INFO - Saved 3 discourses to discourses.json
+2026-05-29 19:31:05,848 - INFO - Saved TypeScript data to src/lib/scraped-data.ts
+2026-05-29 19:31:05,850 - INFO - Scraping completed. Found 3 discourses.

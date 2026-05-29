@@ -1,0 +1,6 @@
+{
+  "version": 1,
+  "lastUpdated": "2025-06-01",
+  "totalDiscourses": 5008,
+  "note": "Bump version when new discourses are scraped. Update lastUpdated with the date."
+}

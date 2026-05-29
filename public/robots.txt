@@ -1,0 +1,10 @@
+User-agent: *
+Allow: /
+Disallow: /api/
+Disallow: /settings
+Disallow: /onboarding
+
+Sitemap: https://osho.fm/sitemap.xml
+
+# Osho.fm - Listen to Osho Discourses
+# Thousands of audio discourses for meditation and learning
