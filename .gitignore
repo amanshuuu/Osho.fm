@@ -34,8 +34,8 @@ yarn-error.log*
 .env*
 
 # local dev files
-click-test.mjs
-discourses.json
+/click-test.mjs
+/discourses.json
 
 # vercel
 .vercel
