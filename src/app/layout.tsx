@@ -43,11 +43,13 @@ export default function RootLayout({
           <meta name="description" content="Discover thousands of Osho audio discourses. Meditate, learn, and grow with the wisdom of Osho." />
           <meta name="theme-color" content="#7A1A2E" />
           <meta name="google-site-verification" content="mSgcPg34YjW2p6sPMhgF7-yX_mSMiEemaRawminyFiE" />
+          <meta name="msvalidate.01" content="F7B4953261B405E85C88E57252438D21" />
           <link rel="manifest" href="/manifest.json" />
           <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
           <link rel="apple-touch-icon" href="/favicon.svg" />
           <meta property="og:type" content="website" />
           <meta property="og:site_name" content="Osho.fm" />
+          <meta name="robots" content="index, follow" />
         </head>
         <body className="bg-[#FDFCF9] text-[#1A1A1A] min-h-[100dvh]">
           <PlayerProvider>
@@ -65,11 +67,13 @@ export default function RootLayout({
         <meta name="description" content="Discover thousands of Osho audio discourses. Meditate, learn, and grow with the wisdom of Osho." />
         <meta name="theme-color" content="#7A1A2E" />
         <meta name="google-site-verification" content="mSgcPg34YjW2p6sPMhgF7-yX_mSMiEemaRawminyFiE" />
+        <meta name="msvalidate.01" content="F7B4953261B405E85C88E57252438D21" />
         <link rel="manifest" href="/manifest.json" />
         <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
         <link rel="apple-touch-icon" href="/favicon.svg" />
         <meta property="og:type" content="website" />
         <meta property="og:site_name" content="Osho.fm" />
+        <meta name="robots" content="index, follow" />
       </head>
       <body className="bg-[#FDFCF9] text-[#1A1A1A]">
         <LanguageProvider>
