@@ -64,7 +64,8 @@ export default function HomePage() {
                 { label: 'Discover', href: '/discover' },
                 { label: 'Categories', href: '/categories' },
                 { label: 'Daily Wisdom', href: '/daily-wisdom' },
-                { label: 'Trending', href: '/discover' },
+                { label: 'Osho Quotes', href: '/quotes' },
+                { label: 'Guided Meditation', href: '/guided-meditation' },
               ]},
               { title: 'Library', links: [
                 { label: 'Saved', href: '/saved' },
@@ -73,6 +74,8 @@ export default function HomePage() {
               ]},
               { title: 'About', links: [
                 { label: 'About', href: '/about' },
+                { label: 'How to Meditate', href: '/how-to-meditate' },
+                { label: 'Meditation Techniques', href: '/meditation-techniques' },
                 { label: 'Privacy', href: '/privacy' },
                 { label: 'Terms', href: '/terms' },
               ]},
